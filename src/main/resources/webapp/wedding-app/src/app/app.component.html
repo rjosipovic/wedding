@@ -1,0 +1,19 @@
+<div>
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link active" [routerLink]="['/welcome']">Welcome</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" [routerLink]="['/guests']">Guest List</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/add-guest']">Add Guest</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/summary']">Summary</a>
+    </li>
+  </ul>
+</div>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

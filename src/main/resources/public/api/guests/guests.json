@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Antony",
+        "surname": "Stark",
+        "family": "Stark",
+        "type": "GUEST",
+        "settings": {
+            "arrivalConfirmed": "true",
+            "presentAtReception": "true",
+            "travelingWithBus": "true",
+            "presentAtWedding": "true",
+            "presentAtDinner": "true",
+            "sleeping": "true",
+            "sundayLunch": "true"
+        }
+    },
+    {
+        "name": "Pepper",
+        "surname": "Potts",
+        "family": "Stark",
+        "type": "GUEST",
+        "settings": {
+            "arrivalConfirmed": "true",
+            "presentAtReception": "true",
+            "travelingWithBus": "true",
+            "presentAtWedding": "true",
+            "presentAtDinner": "true",
+            "sleeping": "true",
+            "sundayLunch": "true"
+        }
+    },
+    {
+        "name": "Bruce",
+        "surname": "Banner",
+        "family": "Banner",
+        "type": "GUEST",
+        "settings": {
+            "arrivalConfirmed": "true",
+            "presentAtReception": "false",
+            "travelingWithBus": "false",
+            "presentAtWedding": "true",
+            "presentAtDinner": "true",
+            "sleeping": "false",
+            "sundayLunch": "false"
+        }
+    },
+    {
+        "name": "Natasha",
+        "surname": "Romanoff",
+        "family": "Romanoff",
+        "type": "GUEST",
+        "settings": {
+            "arrivalConfirmed": "true",
+            "presentAtReception": "false",
+            "travelingWithBus": "false",
+            "presentAtWedding": "true",
+            "presentAtDinner": "true",
+            "sleeping": "false",
+            "sundayLunch": "false"
+        }
+    },
+    {
+        "name": "Thor",
+        "surname": "Just Thor",
+        "family": "Asgard",
+        "type": "GUEST",
+        "settings": {
+            "arrivalConfirmed": "true",
+            "presentAtReception": "true",
+            "travelingWithBus": "false",
+            "presentAtWedding": "true",
+            "presentAtDinner": "true",
+            "sleeping": "true",
+            "sundayLunch": "true"
+        }
+    },
+    {
+        "name": "Jane",
+        "surname": "Foster",
+        "family": "Foster",
+        "type": "GUEST",
+        "settings": {
+            "arrivalConfirmed": "true",
+            "presentAtReception": "true",
+            "travelingWithBus": "false",
+            "presentAtWedding": "true",
+            "presentAtDinner": "true",
+            "sleeping": "true",
+            "sundayLunch": "true"
+        }
+    }
+]

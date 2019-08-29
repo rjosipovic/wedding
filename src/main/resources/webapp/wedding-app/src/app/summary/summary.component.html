@@ -1,0 +1,35 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Wedding summary</h5>
+    <table class="table" *ngIf="summary">
+      <tr>
+        <td>Arriving</td>
+        <td>{{summary.arrivingCount}}</td>
+      </tr>
+      <tr>
+        <td>Reception</td>
+        <td>{{summary.receptionCount}}</td>
+      </tr>
+      <tr>
+        <td>Bus</td>
+        <td>{{summary.withBusCount}}</td>
+      </tr>
+      <tr>
+        <td>Wedding</td>
+        <td>{{summary.atWeddingCount}}</td>
+      </tr>
+      <tr>
+        <td>Dinner</td>
+        <td>{{summary.atDinnerCount}}</td>
+      </tr>
+      <tr>
+        <td>Sleeping</td>
+        <td>{{summary.sleepingCount}}</td>
+      </tr>
+      <tr>
+        <td>Lunch</td>
+        <td>{{summary.sundayLunchCount}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

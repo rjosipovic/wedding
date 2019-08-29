@@ -1,0 +1,19 @@
+.card {
+    width: 50%;
+}
+.btn {
+    margin: 5px;
+}
+
+div {
+    margin: 10px;
+    width: 50%;
+}
+
+.field-invalid {
+    border: 1px solid red;
+}
+
+.btn {
+    margin: 5px;
+}

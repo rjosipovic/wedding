@@ -1,0 +1,40 @@
+<div class='card'>
+  <div class='card-header'>
+    <h2><strong>Guests</strong></h2>
+  </div>
+  <div class='card-body'>
+    <div class='row'>
+      <div class='col-md-1'>Filter by:</div>
+      <div class='col-md-2'>
+        <input type='text' [(ngModel)]='filter' />
+      </div>
+    </div>
+
+    <div class="table-responsive">
+      <table class="table" *ngIf='guests && guests.length'>
+        <thead>
+          <tr>
+            <th></th>
+            <th>ID</th>
+            <th>Full Name</th>
+            <th>Type</th>
+            <th>Guest of</th>
+            <th>Settings</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor='let guest of filteredGuests'>
+            <guests-operations [guest]='guest'></guests-operations>
+            <td>{{guest.id}}</td>
+            <td>{{guest.fullName}}</td>
+            <td>{{guest.type}}</td>
+            <td>{{guest.guestOf}}</td>
+            <td>
+              <guests-settings [guest]='guest'></guests-settings>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+	<changeSet author="roman" id="201908192240">
+
+		<createSequence incrementBy="50" maxValue="9223372036854775807" schemaName="public" sequenceName="guest_id_seq" startValue="500" />
+
+		<!-- GUEST_TABLE -->
+		<createTable tableName="guest">
+			<column name="id" type="BIGINT">
+				<constraints primaryKey="true" />
+			</column>
+
+			<column name="full_name" type="VARCHAR(128)">
+				<constraints nullable="false" />
+			</column>
+
+			<column name="type" type="VARCHAR(32)">
+				<constraints nullable="false" />
+			</column>
+
+			<column name="guest_of" type="VARCHAR(5)">
+				<constraints nullable="false" />
+			</column>
+
+			<column name="arriving" type="BOOLEAN">
+				<constraints nullable="true" />
+			</column>
+
+			<column name="at_reception" type="BOOLEAN">
+				<constraints nullable="true" />
+			</column>
+
+			<column name="in_bus" type="BOOLEAN">
+				<constraints nullable="true" />
+			</column>
+
+			<column name="at_wedding" type="BOOLEAN">
+				<constraints nullable="true" />
+			</column>
+
+			<column name="at_dinner" type="BOOLEAN">
+				<constraints nullable="true" />
+			</column>
+
+			<column name="sleeping" type="BOOLEAN">
+				<constraints nullable="true" />
+			</column>
+
+			<column name="at_lunch" type="BOOLEAN">
+				<constraints nullable="true" />
+			</column>
+
+		</createTable>
+		<rollback>
+			<dropTable tableName="guest" />
+		</rollback>
+	</changeSet>
+
+</databaseChangeLog>

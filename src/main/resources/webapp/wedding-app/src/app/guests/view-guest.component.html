@@ -1,0 +1,35 @@
+<div class="card">
+  <div class='card-header'>
+    <h2><strong>Guest Details</strong></h2>
+  </div>
+  <table class="table table-striped">
+    <tbody>
+      <tr>
+        <th scope="row">ID</th>
+        <td>{{guest.id}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Full Name</th>
+        <td>{{guest.fullName}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Type</th>
+        <td>{{guest.type}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Guest Of</th>
+        <td>{{guest.guestOf}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Settings</th>
+        <td>
+          <guests-settings [guest]='guest'></guests-settings>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div>
+      <button (click)="onEdit()" type="button" class="btn btn-primary">Edit</button>
+      <button (click)="onBackToGuests()" type="button" class="btn btn-primary">Guests</button>
+    </div>
+  </div>

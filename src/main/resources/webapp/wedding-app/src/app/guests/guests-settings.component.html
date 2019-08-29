@@ -1,0 +1,23 @@
+<ul class="list-group list-group-horizontal">
+  <li class="list-group-item" [hidden]="!guest.arrivalConfirmed || guest.arrivalConfirmed == 'false'">
+    <fa-icon [icon]="faPlusCircle">Arriving</fa-icon>
+  </li>
+  <li class="list-group-item" [hidden]="!guest.presentAtReception || guest.presentAtReception == 'false'">
+    <fa-icon [icon]="faGlassCheers">Reception</fa-icon>
+  </li>
+  <li class="list-group-item" [hidden]="!guest.travelingWithBus || guest.travelingWithBus == 'false'">
+    <fa-icon [icon]="faBus">Taking the bus</fa-icon>
+  </li>
+  <li class="list-group-item" [hidden]="!guest.presentAtWedding || guest.presentAtWedding == 'false'">
+    <fa-icon [icon]="faChurch">Wedding ceremony</fa-icon>
+  </li>
+  <li class="list-group-item" [hidden]="!guest.presentAtDinner || guest.presentAtDinner == 'false'">
+    <fa-icon [icon]="faUsers">Wedding dinner party</fa-icon>
+  </li>
+  <li class="list-group-item" [hidden]="!guest.sleeping || guest.sleeping == 'false'">
+    <fa-icon [icon]="faBed">Sleeping</fa-icon>
+  </li>
+  <li class="list-group-item" [hidden]="!guest.sundayLunch || guest.sundayLunch == 'false'">
+    <fa-icon [icon]="faUtensils">Sunday lunch</fa-icon>
+  </li>
+</ul>
